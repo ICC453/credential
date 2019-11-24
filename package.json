@@ -1,0 +1,28 @@
+{
+  "name": "credential",
+  "version": "1.0.0",
+  "description": "naive credential",
+  "main": "credential.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "credential"
+  ],
+  "author": "cavmelo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.4",
+    "node-fetch": "^2.6.0",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICC453/credential.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ICC453/credential/issues"
+  },
+  "homepage": "https://github.com/ICC453/credential#readme"
+}
