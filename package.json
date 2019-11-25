@@ -1,6 +1,6 @@
 {
   "name": "@icc453/credential",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "naive credential",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -15,7 +15,8 @@
     "postversion": "git push && git push --tags"
   },
   "files": [
-    "lib/**/*","package.json"
+    "lib/**/*",
+    "package.json"
   ],
   "keywords": [
     "credential"
