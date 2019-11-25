@@ -15,7 +15,7 @@
     "postversion": "git push && git push --tags"
   },
   "files": [
-    "lib/**/*"
+    "lib/**/*","package.json"
   ],
   "keywords": [
     "credential"
