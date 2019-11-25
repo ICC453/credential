@@ -1,11 +1,22 @@
 {
-  "name": "credential",
-  "version": "1.0.0",
+  "name": "@icc453/credential",
+  "version": "1.0.1",
   "description": "naive credential",
-  "main": "credential.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "keywords": [
     "credential"
   ],
@@ -14,6 +25,9 @@
   "devDependencies": {
     "@types/node-fetch": "^2.5.4",
     "node-fetch": "^2.6.0",
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.7.2"
   },
   "dependencies": {},
@@ -24,5 +38,8 @@
   "bugs": {
     "url": "https://github.com/ICC453/credential/issues"
   },
-  "homepage": "https://github.com/ICC453/credential#readme"
+  "homepage": "https://github.com/ICC453/credential#readme",
+  "directories": {
+    "lib": "lib"
+  }
 }
